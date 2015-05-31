@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后台管理员登录页面</title>
+	<link rel="stylesheet" href="../css/main.css" type="text/css">
+	<link rel="stylesheet" href="../css/gogou-signup.css" type="text/css">
+	<link rel="stylesheet" href="../css/gogou_logon.css" type="text/css">
+	
+</head>
+<body>
+	<div id="top_link">
+		<a href="#">首页</a><span>|</span>
+		<a href="#">请登录</a><span>|</span>
+		<a href="#">免费注册</a><span>|</span>
+		<img src="../images/buy.gif"><a href="#">购物车</a><span>|</span>
+		<a href="#">我的订单</a><span>|</span>
+		<a href="">☆收藏夹</a><span>|</span>
+		<a href="#">帮助中心</a>
+	</div>
+	<br><br><br><br>
+	<div id="gogou-outer">
+		<br><br>
+		<div id="m_out">
+			<br><br><br><br><br><br><br>
+			<div id="m_container" >
+				<div id="box-heigth">&nbsp;</div>
+				<div id="m_text">
+					<label for="name"><b>管理员账号:</b></label><input type="text" value="输入账号" maxlength="100" id="username" class="m-block" ajaxurl="demo/valid.jsp"  datatype="s6-18" errormsg="账号至少6个字符,最多18个字符！" >
+				</div>
+				<div id="box-heigth"></div>
+				<div id="m_text">
+					<label for="password"><b>管理员密码:</b></label><input type="password" value="" maxlength="100" id="password" class="m-block" datatype="*6-16" nullmsg="请输入密码！" errormsg="密码范围在6~16位之间！">
+				</div>
+					
+				<div id="box-heigth">&nbsp;</div>
+				<div id="m_text">
+					<input type="submit" id="m_logon" value="管理员登录"><input type="reset" id="m_logon" value="重置">
+				</div>					
+			</div>
+		</div>
+	
+	</div>
+</body>
+</html>

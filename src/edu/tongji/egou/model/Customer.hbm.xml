@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-5-30 16:34:31 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="edu.tongji.egou.model.Customer" table="customer" catalog="egou">
+        <id name="customerId" type="string">
+            <column name="customerid" length="30" />
+            <generator class="assigned" />
+        </id>
+        <property name="customerName" type="string">
+            <column name="customername" length="30" not-null="true" />
+        </property>
+        <property name="cPassword" type="string">
+            <column name="cpassword" length="30" not-null="true" />
+        </property>
+        <property name="cPhone" type="string">
+            <column name="cphone" length="20" not-null="true" />
+        </property>
+        <property name="cEmail" type="string">
+            <column name="cemail" length="50" not-null="true" />
+        </property>
+        <property name="cAddress" type="string">
+            <column name="caddress" length="50" />
+        </property>
+        <property name="score" type="int">
+            <column name="score" not-null="true" />
+        </property>
+        <property name="deposit" type="double">
+            <column name="deposit" precision="22" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

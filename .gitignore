@@ -1,3 +1,11 @@
+*.classpath
+.settings/*
+build/*
+/build/*
+/.settings/*
+/classes/*
+*.MF
+
 *.class
 
 # Mobile Tools for Java (J2ME)

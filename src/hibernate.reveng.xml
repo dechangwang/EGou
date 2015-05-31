@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+
+
+<table-filter match-catalog="egou" match-name="customer" />
+<table catalog="egou" name="customer"
+	class="edu.tongji.egou.model.Customer">
+	<primary-key>
+		<key-column name="customerid" property="customerId" type="string"/>
+	</primary-key>
+	<column name="customername" property="customerName" type="string"></column>
+	<column name="cpassword" property="cPassword" type="string"></column>
+	<column name="cphone" property="cPhone" type="string"></column>
+	<column name="cemail" property="cEmail" type="string"></column>
+	<column name="caddress" property="cAddress" type="string"></column>
+	<column name="score" property="score" type="int"></column>
+	<column name="deposit" property="deposit" type="double"></column>
+	
+</table>
+</hibernate-reverse-engineering>
